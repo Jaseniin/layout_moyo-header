@@ -1,9 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --color-blue: #00acdc;
 }
 
-header {
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Medium.ttf) format(truetype);
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
   display: flex;
   width: 100%;
   background-color: #fff;
@@ -13,11 +25,7 @@ header {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-}
-
-nav a {
+.nav__link {
   height: 60px;
   display: flex;
   align-items: center;
@@ -30,38 +38,38 @@ nav a {
   justify-content: center;
 }
 
-nav a:hover {
-  color: #00ACDC;
+.nav__link:hover {
+  color: var(--color-blue);
 }
 
-nav {
+.nav {
   margin-left: auto;
 }
 
-ul {
+.nav__list {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
 .is-active {
-  color: #00ACDC;
+  color: var(--color-blue);
 }
 
 .is-active::after {
-  content: "";
+  content: '';
   display: block;
   height: 4px;
   width: 100%;
-  background-color: #00ACDC;
+  background-color: var(--color-blue);
   position: absolute;
   bottom: 0;
 }
 
-nav ul li:first-child a {
+.nav__item:first-child .nav__link {
   margin-left: 0;
 }
 
-nav ul li:last-child a {
+.nav__item:last-child .nav__link {
   margin-right: 0;
 }
