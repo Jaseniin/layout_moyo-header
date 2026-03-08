@@ -2,13 +2,6 @@
   --color-blue: #00acdc;
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Medium.ttf) format(truetype);
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -25,6 +18,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 .nav__link {
   height: 60px;
   display: flex;
@@ -34,7 +31,7 @@ body {
   position: relative;
   font-size: 12px;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin-right: 20px;
   justify-content: center;
 }
 
@@ -50,6 +47,8 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .is-active {
